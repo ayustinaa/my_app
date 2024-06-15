@@ -6,3 +6,14 @@
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
 
+data = {full_name: 'Sipa Rohmah', email: 'siparohmah@gmail.com', password: '123bakekok'}
+user = User.create(data)
+
+user = User.first
+articles = [
+    {title: 'Title article 1', description: 'description article 1', user: user},
+    {title: 'Title article 2', description: 'description article 2', user: user},
+    {title: 'Title article 3', description: 'description article 3', user: user}
+]
+
+user = Article.create(articles)
